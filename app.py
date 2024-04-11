@@ -17,4 +17,4 @@ if __name__ == "__main__":
     app = create_app()
 
     # app.run(host="0.0.0.0",port = "5173",debug = True)
-    wsgi.server(eventlet.listen(("0.0.0.0", 5173)), app, debug=False)
+    wsgi.server(eventlet.listen(("0.0.0.0", 8080)), app, debug=False)
